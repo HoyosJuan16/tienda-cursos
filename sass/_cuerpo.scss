@@ -1,0 +1,103 @@
+.main{
+  background: #eee;
+  padding: 25px 0px;
+  .contenedor-main{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 25px;
+    .titulo{
+      grid-column: span 12;
+      text-align:center;
+      text-transform: uppercase;
+    }
+    .caja-curso{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-radius: 6px;
+      background: #fff;
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+      transition: all .8s ease;
+      &:hover{
+        box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.16);
+      }
+      .portada-curso{
+        width: 100%;
+        max-height: 250px;
+        min-height: 250px;
+        img{
+          width: 100%;
+          height: 100%;
+          border-top-right-radius: 6px;
+          border-top-left-radius: 6px;
+        }
+      }
+      .info-curso{
+        height: 200px;  
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+        .calificacion-curso{
+          color: #ffff00;
+        }
+        .autor-curso{
+          font-weight: 300;
+          color: #aaa;
+          transition: all .5s ease;
+          cursor: pointer;
+          &:hover{
+            color: #000;
+          }
+        }
+        .precios{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          .precio-anterior{
+            color: #aaa;
+            text-decoration: line-through red;
+          }
+          .precio-actual{
+            font-size: 1.5rem;
+            font-weight: 600;
+          }
+        }
+        .btn-agregar-carrito{
+          display: block;
+          background: #f50057;
+          color: #fff;
+          text-align: center;
+          padding: 5px;
+          transition: all .8s ease;
+          cursor: pointer;
+          border:1px solid #fff;
+          &:hover{
+            background: #fff;
+            color: #f50057;
+            border-color: #f50057;
+            border-radius: 6px;
+          }
+        }
+      }
+    }
+  }
+}
+@media(max-width:900px){
+  .main{
+    .contenedor-main{
+      .caja.caja-curso{
+        grid-column: span 6;
+      }
+    }
+  }
+}
+@media(max-width:550px){
+  .main{
+    .contenedor-main{
+      .caja.caja-curso{
+        grid-column: span 12;
+      }
+    }
+  }
+}

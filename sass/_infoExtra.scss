@@ -1,0 +1,51 @@
+.info-extra{
+  width: 100%;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f50057+0,f50057+34,ff3d00+100 */
+  background: #f50057; /* Old browsers */
+  background: linear-gradient(to right, #f50057 0%,#f50057 50%,#ff3d00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f50057', endColorstr='#ff3d00',GradientType=1 ); 
+
+  padding: 20px 0px;
+  .contenedor-info-extra{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 15px;
+    color: #fff;
+    .caja-info-extra{
+      display: grid;
+      grid-template-columns: repeat(6,1fr);
+      justify-content: center;
+      grid-column-gap: 10px;
+      .icono{
+        font-size: 1.75rem;
+        grid-column: span 1;
+        grid-row-start: 1;
+        grid-row-end:2;
+        align-self: center;
+        justify-self: center;
+      }
+      .texto{
+        grid-column: span 5;
+      }
+    }
+  }
+}
+@media(max-width:1025px){
+  .info-extra{
+    .contenedor-info-extra{
+      .caja.caja-info-extra{
+        grid-column:span 6;
+      }
+    }
+  }
+}
+@media(max-width:690px){
+  .info-extra{
+    .contenedor-info-extra{
+      .caja.caja-info-extra{
+        grid-column:span 12;
+        justify-self: center;
+      }
+    }
+  }
+}

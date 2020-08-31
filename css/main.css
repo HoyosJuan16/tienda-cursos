@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif; }
+
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto; }
+
+.caja {
+  grid-column: span 4; }
+
+a {
+  text-decoration: none; }
+
+.header {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0px; }
+  .header .contenedor-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .header .contenedor-header .logo {
+      font-size: 24px;
+      font-weight: 700;
+      background: #f50057;
+      color: #fff;
+      border-radius: 6px;
+      padding: 5px 7px; }
+    .header .contenedor-header .carrito {
+      font-size: 24px;
+      font-weight: 700;
+      color: #aaa;
+      cursor: pointer;
+      transition: all .8s ease; }
+      .header .contenedor-header .carrito:hover {
+        color: #f50057;
+        transform: scale(1.125); }
+
+.banner {
+  width: 100%;
+  height: 450px;
+  max-height: 450px;
+  padding: 10% 0px;
+  background: url(../images/bg-banner-2.jpeg);
+  transform: scaleX(-1);
+  -ms-filter: "FlipH";
+  filter: FlipH;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .banner .contenedor-banner {
+    transform: scaleX(-1);
+    -ms-filter: "FlipH";
+    filter: FlipH;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 15px; }
+    .banner .contenedor-banner .subtitulo-banner {
+      grid-column: span 12;
+      text-shadow: 0px 3px 5px #fff;
+      color: #c51162;
+      font-size: 2.50rem; }
+    .banner .contenedor-banner .info-min-banner {
+      grid-column: span 12;
+      text-shadow: 0px 3px 5px #fff;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      font-weight: 300;
+      color: #fff; }
+    .banner .contenedor-banner .buscador {
+      grid-row-start: 3;
+      grid-row-end: 4;
+      grid-column: span 4;
+      background: #fff;
+      border-radius: 6px;
+      display: flex;
+      justify-content: space-between; }
+      .banner .contenedor-banner .buscador #buscarInput {
+        width: 80%;
+        padding: 15px;
+        outline: none;
+        border: none;
+        border-radius: 6px;
+        color: #aaa; }
+      .banner .contenedor-banner .buscador .btn-buscar {
+        width: 20%;
+        padding: 15px;
+        border: none;
+        border-radius: 6px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        cursor: pointer;
+        background: #fff;
+        transition: all .5s ease;
+        font-weight: 400;
+        font-size: 1.125rem; }
+        .banner .contenedor-banner .buscador .btn-buscar:hover {
+          color: #c51162; }
+
+@media (max-width: 800px) {
+  .banner .contenedor-banner .buscador {
+    grid-column: span 9; } }
+@media (max-width: 550px) {
+  .banner .contenedor-banner .buscador {
+    grid-column: span 12; } }
+.info-extra {
+  width: 100%;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f50057+0,f50057+34,ff3d00+100 */
+  background: #f50057;
+  /* Old browsers */
+  background: linear-gradient(to right, #f50057 0%, #f50057 50%, #ff3d00 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f50057', endColorstr='#ff3d00',GradientType=1 );
+  padding: 20px 0px; }
+  .info-extra .contenedor-info-extra {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 15px;
+    color: #fff; }
+    .info-extra .contenedor-info-extra .caja-info-extra {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      justify-content: center;
+      grid-column-gap: 10px; }
+      .info-extra .contenedor-info-extra .caja-info-extra .icono {
+        font-size: 1.75rem;
+        grid-column: span 1;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        align-self: center;
+        justify-self: center; }
+      .info-extra .contenedor-info-extra .caja-info-extra .texto {
+        grid-column: span 5; }
+
+@media (max-width: 1025px) {
+  .info-extra .contenedor-info-extra .caja.caja-info-extra {
+    grid-column: span 6; } }
+@media (max-width: 690px) {
+  .info-extra .contenedor-info-extra .caja.caja-info-extra {
+    grid-column: span 12;
+    justify-self: center; } }
+.main {
+  background: #eee;
+  padding: 25px 0px; }
+  .main .contenedor-main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 25px; }
+    .main .contenedor-main .titulo {
+      grid-column: span 12;
+      text-align: center;
+      text-transform: uppercase; }
+    .main .contenedor-main .caja-curso {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-radius: 6px;
+      background: #fff;
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+      transition: all .8s ease; }
+      .main .contenedor-main .caja-curso:hover {
+        box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.16); }
+      .main .contenedor-main .caja-curso .portada-curso {
+        width: 100%;
+        max-height: 250px;
+        min-height: 250px; }
+        .main .contenedor-main .caja-curso .portada-curso img {
+          width: 100%;
+          height: 100%;
+          border-top-right-radius: 6px;
+          border-top-left-radius: 6px; }
+      .main .contenedor-main .caja-curso .info-curso {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px; }
+        .main .contenedor-main .caja-curso .info-curso .calificacion-curso {
+          color: #ffff00; }
+        .main .contenedor-main .caja-curso .info-curso .autor-curso {
+          font-weight: 300;
+          color: #aaa;
+          transition: all .5s ease;
+          cursor: pointer; }
+          .main .contenedor-main .caja-curso .info-curso .autor-curso:hover {
+            color: #000; }
+        .main .contenedor-main .caja-curso .info-curso .precios {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between; }
+          .main .contenedor-main .caja-curso .info-curso .precios .precio-anterior {
+            color: #aaa;
+            text-decoration: line-through red; }
+          .main .contenedor-main .caja-curso .info-curso .precios .precio-actual {
+            font-size: 1.5rem;
+            font-weight: 600; }
+        .main .contenedor-main .caja-curso .info-curso .btn-agregar-carrito {
+          display: block;
+          background: #f50057;
+          color: #fff;
+          text-align: center;
+          padding: 5px;
+          transition: all .8s ease;
+          cursor: pointer;
+          border: 1px solid #fff; }
+          .main .contenedor-main .caja-curso .info-curso .btn-agregar-carrito:hover {
+            background: #fff;
+            color: #f50057;
+            border-color: #f50057;
+            border-radius: 6px; }
+
+@media (max-width: 900px) {
+  .main .contenedor-main .caja.caja-curso {
+    grid-column: span 6; } }
+@media (max-width: 550px) {
+  .main .contenedor-main .caja.caja-curso {
+    grid-column: span 12; } }
+
+/*# sourceMappingURL=main.css.map */

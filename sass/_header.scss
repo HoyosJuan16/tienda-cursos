@@ -1,0 +1,29 @@
+.header{
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0px;
+  .contenedor-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .logo{
+      font-size: 24px;
+      font-weight: 700;
+      background: #f50057;
+      color: #fff;
+      border-radius: 6px;
+      padding: 5px 7px;
+    }
+    .carrito{
+      font-size: 24px;
+      font-weight: 700;
+      color: #aaa;
+      cursor: pointer;
+      transition: all .8s ease;
+      &:hover{
+        color: #f50057;
+        transform: scale(1.125)
+      }
+    }
+  }
+}
