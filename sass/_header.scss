@@ -20,10 +20,108 @@
       color: #aaa;
       cursor: pointer;
       transition: all .8s ease;
-      &:hover{
-        color: #f50057;
-        transform: scale(1.125)
+      position: relative;
+      i{
+        transition: all .8s ease;
+        &:hover{
+          color: #f50057;
+          transform: scale(1.125)
+        }
+      }
+      .content-carrito{
+        position: absolute;
+        z-index: 10;
+        top:32px;
+        right:0;
+        width: 350px;
+        min-height: 200px;
+        height: auto;
+        background: #fff;
+        border-radius: 6px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+        transition: all .8s ease;     
+        border-top:1px solid rgba(0, 0, 0, 0.12);
+        overflow: hidden;
+        display: none;
+        .producto-carrito{
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-bottom: 10px;
+          padding-bottom: 5px;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+          .portada-producto-carrito{
+            width: 25%;
+            max-height: 50px;
+            img{
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .nombre-producto-carrito{
+            font-size: 16px;
+          }
+          .precio-producto-carrito{
+            font-size: 16px;
+            line-height: 50px;
+            color: #000;
+          }
+        }
+        .buttons{
+          width: 100%;
+          justify-items: flex-end;
+          display: flex;
+          flex-direction: column;
+          .btn-vaciar{
+            margin-bottom: 5px;
+            display: block;
+            background: #fff;
+            color: #f50057;
+            text-align: center;
+            padding: 5px;
+            transition: all .8s ease;
+            cursor: pointer;
+            border:1px solid #f50057;
+            &:hover{
+              color: #fff;
+              background-color: #f50057;
+              border-color: #fff;
+              border-radius: 6px;
+            }
+          }
+          .btn-comprar{
+            display: block;
+            background: #f50057;
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+            transition: all .8s ease;
+            cursor: pointer;
+            border:1px solid transparent;
+            &:hover{
+              background: #fff;
+              color: #f50057;
+              border-color: #f50057;
+              border-radius: 6px;
+            }
+          }
+        }
       }
     }
+  }
+}
+@keyframes close{
+  0%{
+    height: 100%;
+    padding: 5px;
+  }
+  100%{
+    height: 0px;
+    padding: 0px;
   }
 }

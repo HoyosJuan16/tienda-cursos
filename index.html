@@ -15,8 +15,20 @@
       <div class="logo">
         PUNTOyCOMA
       </div>
-      <div class="carrito">
+      <div class="carrito" id='carrito'>
         <i class="fas fa-shopping-cart"></i>
+        <form action='/' method='POST' class='content-carrito' id='content-carrito'>
+          <!-- <div class="producto-carrito">
+            <div class='portada-producto-carrito'>
+              <img src='./images/ux-ui.jpeg' />
+            </div>
+            <h3 class='nombre-producto-carrito'>Curso de UX y UI</h3>
+            <span class='precio-producto-carrito'>$9.99</span>
+          </div> -->
+          <div class='buttons'>
+            <input type='submit' class='btn-comprar' id='comprar-carrito' value='COMPRAR' />
+          </div>
+        </form>
       </div>
     </div>
   </header>
@@ -71,17 +83,18 @@
 
   <!-- MAIN -->
   <main class="main">
-    <div class="contenedor contenedor-main">
+    <div class="contenedor contenedor-main" id='lista-cursos'>
       <h1 class="titulo">Crece como Programador</h1>
+
       <div class="caja caja-curso">
         <div class="portada-curso">
-          <img src="./images/curso.jpeg" alt="">
+          <img src="./images/fundamentos-de-la-programacion.jpeg" alt="">
         </div>
         <div class="info-curso">
           <h3 class="nombre-curso">
             Fundamentos de la programacion
           </h3>
-          <a href='www.hoyosjuan.com' class="autor-curso">
+          <a href='http://hoyosjuan.com/' class="autor-curso">
             Hoyos, Juan
           </a>
           <div class="calificacion-curso">
@@ -90,20 +103,20 @@
           <div class="precios">
             <span class='precio-anterior'>$125</span> <span class='precio-actual'>$9.99</span>
           </div>
-          <div class="btn-agregar-carrito">
+          <div class="btn-agregar-carrito" data-id='1'>
             AGREGAR AL CARRITO
           </div>
         </div>
       </div>
       <div class="caja caja-curso">
         <div class="portada-curso">
-          <img src="./images/curso.jpeg" alt="">
+          <img src="./images/ux-ui.jpeg" alt="">
         </div>
         <div class="info-curso">
           <h3 class="nombre-curso">
-            Fundamentos de la programacion
+            Curso de UX y UI
           </h3>
-          <a href='www.hoyosjuan.com' class="autor-curso">
+          <a href='http://hoyosjuan.com/' class="autor-curso">
             Hoyos, Juan
           </a>
           <div class="calificacion-curso">
@@ -112,20 +125,20 @@
           <div class="precios">
             <span class='precio-anterior'>$125</span> <span class='precio-actual'>$9.99</span>
           </div>
-          <div class="btn-agregar-carrito">
+          <div class="btn-agregar-carrito" data-id='2'>
             AGREGAR AL CARRITO
           </div>
         </div>
       </div>
       <div class="caja caja-curso">
         <div class="portada-curso">
-          <img src="./images/curso.jpeg" alt="">
+          <img src="./images/curso-html.jpeg" alt="">
         </div>
         <div class="info-curso">
           <h3 class="nombre-curso">
-            Fundamentos de la programacion
+            HTML-5 Como un Pro
           </h3>
-          <a href='www.hoyosjuan.com' class="autor-curso">
+          <a href='http://hoyosjuan.com/' class="autor-curso">
             Hoyos, Juan
           </a>
           <div class="calificacion-curso">
@@ -134,20 +147,20 @@
           <div class="precios">
             <span class='precio-anterior'>$125</span> <span class='precio-actual'>$9.99</span>
           </div>
-          <div class="btn-agregar-carrito">
+          <div class="btn-agregar-carrito" data-id='3'>
             AGREGAR AL CARRITO
           </div>
         </div>
       </div>
       <div class="caja caja-curso">
         <div class="portada-curso">
-          <img src="./images/curso.jpeg" alt="">
+          <img src="./images/curso-css.jpeg" alt="">
         </div>
         <div class="info-curso">
           <h3 class="nombre-curso">
-            Fundamentos de la programacion
+            Estilos con CSS
           </h3>
-          <a href='www.hoyosjuan.com' class="autor-curso">
+          <a href='http://hoyosjuan.com/' class="autor-curso">
             Hoyos, Juan
           </a>
           <div class="calificacion-curso">
@@ -156,20 +169,20 @@
           <div class="precios">
             <span class='precio-anterior'>$125</span> <span class='precio-actual'>$9.99</span>
           </div>
-          <div class="btn-agregar-carrito">
+          <div class="btn-agregar-carrito" data-id='4'>
             AGREGAR AL CARRITO
           </div>
         </div>
       </div>
       <div class="caja caja-curso">
         <div class="portada-curso">
-          <img src="./images/curso.jpeg" alt="">
+          <img src="./images/graba-tu-podcast.jpeg" alt="">
         </div>
         <div class="info-curso">
           <h3 class="nombre-curso">
-            Fundamentos de la programacion
+            Graba tu podcast
           </h3>
-          <a href='www.hoyosjuan.com' class="autor-curso">
+          <a href='http://hoyosjuan.com/' class="autor-curso">
             Hoyos, Juan
           </a>
           <div class="calificacion-curso">
@@ -178,99 +191,12 @@
           <div class="precios">
             <span class='precio-anterior'>$125</span> <span class='precio-actual'>$9.99</span>
           </div>
-          <div class="btn-agregar-carrito">
+          <div class="btn-agregar-carrito" data-id='4'>
             AGREGAR AL CARRITO
           </div>
         </div>
       </div>
-      <div class="caja caja-curso">
-        <div class="portada-curso">
-          <img src="./images/curso.jpeg" alt="">
-        </div>
-        <div class="info-curso">
-          <h3 class="nombre-curso">
-            Fundamentos de la programacion
-          </h3>
-          <a href='www.hoyosjuan.com' class="autor-curso">
-            Hoyos, Juan
-          </a>
-          <div class="calificacion-curso">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-          </div>
-          <div class="precios">
-            <span class='precio-anterior'>$125</span> <span class='precio-actual'>$9.99</span>
-          </div>
-          <div class="btn-agregar-carrito">
-            AGREGAR AL CARRITO
-          </div>
-        </div>
-      </div>
-      <div class="caja caja-curso">
-        <div class="portada-curso">
-          <img src="./images/curso.jpeg" alt="">
-        </div>
-        <div class="info-curso">
-          <h3 class="nombre-curso">
-            Fundamentos de la programacion
-          </h3>
-          <a href='www.hoyosjuan.com' class="autor-curso">
-            Hoyos, Juan
-          </a>
-          <div class="calificacion-curso">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-          </div>
-          <div class="precios">
-            <span class='precio-anterior'>$125</span> <span class='precio-actual'>$9.99</span>
-          </div>
-          <div class="btn-agregar-carrito">
-            AGREGAR AL CARRITO
-          </div>
-        </div>
-      </div>
-      <div class="caja caja-curso">
-        <div class="portada-curso">
-          <img src="./images/curso.jpeg" alt="">
-        </div>
-        <div class="info-curso">
-          <h3 class="nombre-curso">
-            Fundamentos de la programacion
-          </h3>
-          <a href='www.hoyosjuan.com' class="autor-curso">
-            Hoyos, Juan
-          </a>
-          <div class="calificacion-curso">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-          </div>
-          <div class="precios">
-            <span class='precio-anterior'>$125</span> <span class='precio-actual'>$9.99</span>
-          </div>
-          <div class="btn-agregar-carrito">
-            AGREGAR AL CARRITO
-          </div>
-        </div>
-      </div>
-      <div class="caja caja-curso">
-        <div class="portada-curso">
-          <img src="./images/curso.jpeg" alt="">
-        </div>
-        <div class="info-curso">
-          <h3 class="nombre-curso">
-            Fundamentos de la programacion
-          </h3>
-          <a href='www.hoyosjuan.com' class="autor-curso">
-            Hoyos, Juan
-          </a>
-          <div class="calificacion-curso">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
-          </div>
-          <div class="precios">
-            <span class='precio-anterior'>$125</span> <span class='precio-actual'>$9.99</span>
-          </div>
-          <div class="btn-agregar-carrito">
-            AGREGAR AL CARRITO
-          </div>
-        </div>
-      </div>
+
     </div>
   </main>
 
@@ -282,5 +208,6 @@
   </footer>
 
   <script src="https://kit.fontawesome.com/0299c57ba9.js" crossorigin="anonymous"></script>
+  <script src="./js/carrito.js"></script>
 </body>
 </html>
